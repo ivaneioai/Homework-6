@@ -1,0 +1,22 @@
+:hover {
+    border-bottom: 8% solid black;
+}
+.article-img {
+    position: relative;
+    display: inline-block;
+}
+.article-img::before {
+  content: '';
+  background: aquamarine;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10px;
+  left: +10px;
+  opacity: 0;
+}
+.article-img:hover::before {
+    animation-duration: 3s;
+    opacity:1;
+
+}
